@@ -141,13 +141,16 @@ uint8_t ADS7138::get_status() {
 /*!
     @brief    Checks the Key Status register to return the values of key inputs
               BIT 7 is reserved, key values are stored bits 7 through 0
+    @param    channel number, 1 through 8 (0 thru 7)
     @return returns value of key status register
 */
 
 //@TODO complete this method
-uint8_t ADS7138::read_channel(uint8_t) { return (0x1); }
+uint8_t ADS7138::read_channel(uint8_t chan) { return (0x1); }
 
 /*!
- *  @brief.   Sets the GPIO configuration mode of the device
+    @brief    Sets the GPIO configuration mode of the device
+
+    @param    value to set the GPIO config register to.
  */
 void gpio_config(uint8_t val) { writeRegister8(GPIO_CFG, val); }
