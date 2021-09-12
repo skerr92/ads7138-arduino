@@ -19,7 +19,7 @@ addons:
 env:
   global:
 #    - ARDUINO_IDE_VERSION="1.8.10"
-     - PRETTYNAME="ODT AT42QT1070 Arduino Library"
+     - PRETTYNAME="ODT ADS7138 Arduino Library"
 # Optional, will default to "$TRAVIS_BUILD_DIR/Doxyfile"
 #    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
 

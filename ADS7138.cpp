@@ -59,7 +59,7 @@ bool ADS7138::begin(uint8_t i2caddr) {
   }
 
   writeRegister8(GENERAL_CFG, 0x02); // Calibrate the device by writing a non
-                                       // zero value to calibration register
+                                     // zero value to calibration register
   return true;
 }
 
@@ -122,9 +122,7 @@ void ADS7138::reset() {
     @brief    Calibrates the ADC
 */
 
-void ADS7138::cal() {
-  writeRegister8(GENERAL_CFG, 0x02);
-}
+void ADS7138::cal() { writeRegister8(GENERAL_CFG, 0x02); }
 
 /*!
     @brief    Checks the detect status register to return the value of bit 0
@@ -147,14 +145,9 @@ uint8_t ADS7138::get_status() {
 */
 
 //@TODO complete this method
-uint8_t ADS7138::read_channel(uint8_t) {
-  return (0x1);
-}
+uint8_t ADS7138::read_channel(uint8_t) { return (0x1); }
 
 /*!
  *  @brief.   Sets the GPIO configuration mode of the device
  */
-void gpio_config(uint8_t val) {
-  writeRegister8(GPIO_CFG, val);
-}
-
+void gpio_config(uint8_t val) { writeRegister8(GPIO_CFG, val); }

@@ -41,7 +41,7 @@
  */
 
 enum chip_info {
-  
+
 };
 
 /*!
@@ -49,15 +49,9 @@ enum chip_info {
  */
 
 enum {
-  SYSTEM_STATUS = (0x00)
-  GENERAL_CFG = (0x01)
-  DATA_CFG = (0x02)
-  OSR_CFG = (0x03)
-  OPMODE_CFG = (0x04)
-  PIN_CFG = (0x05)
-  GPIO_CFG = (0x06)
+  SYSTEM_STATUS = (0x00)GENERAL_CFG = (0x01)DATA_CFG = (0x02)OSR_CFG =
+      (0x03)OPMODE_CFG = (0x04)PIN_CFG = (0x05)GPIO_CFG = (0x06)
 };
-
 
 /*!
  * @brief ADS7138 Class object
