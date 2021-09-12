@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+[![Build Status](https://app.travis-ci.com/skerr92/ads7138-arduino.svg?branch=main)](https://app.travis-ci.com/skerr92/ads7138-arduino)
+# ADS7138 Arduino Library
 
-You can use the [editor on GitHub](https://github.com/skerr92/ads7138-arduino/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+This is the library for the ADS7138 Analog To Digital Converter. The is developed in conjunction with Oak Development Technologies.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The ADS7138 is an I2C Analog To Digital Converter which can also be configured as a GPIO expander. This library seeks to simplify the use of the ADS7138 in Arduino
+by providing an easy to implement front end.
 
-### Markdown
+### Contributing
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Contributions by others help make these libraries better for the community. If you have a feature or a fix to be added, please file and issue and feel free to start working! 
 
-```markdown
-Syntax highlighted code block
+### License
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/skerr92/ads7138-arduino/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+This software is licensed under an MIT license. Attributions to the original source should be maintained following the guidelines of the LICENSE document.
