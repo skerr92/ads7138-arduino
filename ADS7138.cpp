@@ -126,7 +126,7 @@ void ADS7138::cal() { writeRegister8(GENERAL_CFG, 0x02); }
 
 /*!
     @brief    Checks the detect status register to return the value of bit 0
-    @return returns value of bit 0 as a boolean value
+    @return   returns value of the system status register
 */
 
 uint8_t ADS7138::get_status() {
@@ -139,14 +139,12 @@ uint8_t ADS7138::get_status() {
 }
 
 /*!
-    @brief    Checks the Key Status register to return the values of key inputs
-              BIT 7 is reserved, key values are stored bits 7 through 0
+    @brief    Reads the particular channel specified.
     @param    chan
               channel number, 1 through 8 (0 thru 7)
-    @return returns value of key status register
+    @return   returns the value of the channel
 */
 
-//@TODO complete this method
 uint8_t ADS7138::read_channel(uint8_t chan) { return (0x1); }
 
 /*!
@@ -154,5 +152,6 @@ uint8_t ADS7138::read_channel(uint8_t chan) { return (0x1); }
 
     @param    val
               value to set the GPIO config register to.
- */
+*/
+
 void gpio_config(uint8_t val) { writeRegister8(GPIO_CFG, val); }
