@@ -154,4 +154,4 @@ uint8_t ADS7138::read_channel(uint8_t chan) { return (0x1); }
               value to set the GPIO config register to.
 */
 
-void gpio_config(uint8_t val) { writeRegister8(GPIO_CFG, val); }
+void ADS7138::gpio_config(uint8_t val) { writeRegister8(GPIO_CFG, val); }
