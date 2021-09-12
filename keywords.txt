@@ -1,4 +1,0 @@
-ads7138-acorn   KEYWORD1
-begin   KEYWORD2
-adc KEYWORD2
-gpio_config  KEYWORD2
